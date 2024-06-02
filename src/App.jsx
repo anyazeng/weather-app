@@ -1,24 +1,17 @@
 import BackgroundImage from "./Components/BackgroundImage";
 import WeatherCard from "./Components/WeatherCard";
+import bg from "./assets/bg.png";
 
 const App = () => {
   return (
-    <div className="min-h-screen w-full">
-      <WeatherCard />;
-    </div>
+    <BackgroundImage
+      imageUrl={bg}
+      alt="bg"
+      className="h-screen bg-cover flex items-center font-alimama"
+    >
+      <WeatherCard />
+    </BackgroundImage>
   );
 };
 
 export default App;
-
-{
-  /* <div className="relative">
-<BackgroundImage>
-  <div className="relative z-100">
-    <WeatherCard />
-  </div>
-</BackgroundImage>
-</div> */
-}
-
-// return <WeatherCard />;

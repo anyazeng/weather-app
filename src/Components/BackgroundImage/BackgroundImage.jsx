@@ -1,9 +1,17 @@
 import React from "react";
 import bg from "../../assets/bg.png";
 
-const BackgroundImage = () => {
+const BackgroundImage = ({
+  imageUrl,
+  alt = "Descriptive alt text",
+  children,
+  className,
+}) => {
   return (
-    <div imageUrl={bg} className="h-screen bg-cover flex item-center"></div>
+    <div className={className} style={{ backgroundImage: `url(${imageUrl})` }}>
+      <img src={imageUrl} alt={alt} className="hidden" />
+      {children}
+    </div>
   );
 };
 
