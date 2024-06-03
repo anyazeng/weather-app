@@ -1,7 +1,7 @@
 import React from "react";
 
-const Date = () => {
-  return <div>Date</div>;
+const Date = ({ value, className }) => {
+  return <div className={className}>{value}</div>;
 };
 
 export default Date;

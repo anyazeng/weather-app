@@ -1,7 +1,7 @@
 import React from "react";
 
-const TempRange = () => {
-  return <div>TempRange</div>;
+const TempRange = ({ value, className }) => {
+  return <div className={className}>{value}°C</div>;
 };
 
 export default TempRange;
