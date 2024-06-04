@@ -3,7 +3,7 @@ import City from "./Components/City";
 
 const SearchHistory = () => {
   return (
-    <div className="flex">
+    <div className="flex justify-between p-6 mb-12">
       <City />
       <City />
       <City />
