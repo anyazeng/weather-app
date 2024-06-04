@@ -11,13 +11,13 @@ import icon from "../../../WeatherIcon/assets/Cloudy_day.png";
 
 const CurrentCity = () => {
   return (
-    <div className="flex flex-col items-center space-y-6">
+    <div className="flex flex-col items-center space-y-6 shadow-md">
       <Image imageUrl={bg} alt="cloud" className="absolute top-0 right-0" />
       <Date value="20 July, Sunday 12:00" className="text-white" />
       <Name value="Melbourne" className="text-white text-3xl font-bold" />
       <Temperature value="28" className="text-slate-200 text-3xl font-bold" />
       <TempRange value="26-29" className="text-white" />
-      <WeatherIcon imageUrl={icon} alt="cloudyIcon" className="" />
+      <WeatherIcon imageUrl={icon} alt="cloudyIcon" className="w-160 h-160" />
       <Meta />
     </div>
   );

@@ -4,7 +4,7 @@ import Button from "./Components/Button";
 
 const SearchBar = () => {
   return (
-    <div>
+    <div className="flex">
       <Input />
       <Button />
     </div>

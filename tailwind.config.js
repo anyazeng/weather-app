@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         alimama: ["AlimamaFangYuanTiVF-Thin", "Helvetica"],
       },
+      colors: {
+        "dark-blue": "#191350",
+      },
     },
   },
   plugins: [],
